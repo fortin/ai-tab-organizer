@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Tab Organizer</title>
+    <style>
+      :root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+      body { width: 280px; margin: 0; padding: 18px; color: #1f2937; background: #fff; }
+      @media (prefers-color-scheme: dark) { body { color: #f3f4f6; background: #1f2937; } }
+      h1 { margin: 0 0 8px; font-size: 18px; }
+      p { margin: 0 0 16px; line-height: 1.4; font-size: 13px; opacity: .8; }
+      button { width: 100%; border: 0; border-radius: 8px; padding: 10px 12px; color: white; background: #2563eb; font-weight: 600; cursor: pointer; }
+      button:disabled { cursor: wait; opacity: .6; }
+      #status { min-height: 18px; margin-top: 12px; font-size: 12px; }
+      .error { color: #dc2626; }
+      .success { color: #16a34a; }
+    </style>
+  </head>
+  <body>
+    <h1>AI Tab Organizer</h1>
+    <p>Sort your current window's ungrouped tabs with local Ollama AI.</p>
+    <button id="organize" type="button">Organize My Tabs</button>
+    <div id="status" role="status" aria-live="polite"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>

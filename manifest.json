@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "AI Tab Organizer (Ollama)",
+  "version": "1.0.0",
+  "description": "Organize your open tabs with a local Ollama model.",
+  "permissions": ["tabs", "tabGroups"],
+  "host_permissions": ["http://127.0.0.1:3000/*", "http://localhost:3000/*"],
+  "action": {
+    "default_title": "AI Tab Organizer",
+    "default_popup": "popup.html"
+  }
+}
